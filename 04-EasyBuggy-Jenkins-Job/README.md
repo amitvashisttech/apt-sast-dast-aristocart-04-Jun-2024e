@@ -1,5 +1,12 @@
 # Jenkins Job 
 
+### As we are going to build Java Based Application which required maven build tool to be installed on master node: 
+
+### 0. Install Maven 
+```
+apt-get install maven -y 
+```
+
 ### 1. Login Jenkins 
 
 ### 2. Click on New Item from the Left Menu 
