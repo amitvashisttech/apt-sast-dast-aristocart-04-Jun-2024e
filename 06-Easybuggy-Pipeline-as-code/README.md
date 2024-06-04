@@ -10,6 +10,6 @@
 
 ### 5. Select the Jenkisfile Branch : pipeline
 
-### 6. Script Path : easybuggy/Jeninsfile
+### 6. Script Path : easybuggy/Jenkinsfile
 
 ### 7. Configure Build Trigger as Poll SCM : "*/05 * * * *"
