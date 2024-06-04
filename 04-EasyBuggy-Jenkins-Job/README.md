@@ -6,8 +6,11 @@
 
 ### 3. Now Provide the below Details: 
 ```
-Name: EasyBuggy 
+Name: EasyBuggy
+SCM : Select -> Git 
 Type: FreeStyle Job 
+Repo: Our Repo 
+Branch : */main 
 Go to Build Steps -> Select Execute Shell -> Supply the Linux Command of your choice. 
 ```
 
