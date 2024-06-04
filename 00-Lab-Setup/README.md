@@ -35,7 +35,7 @@ sudo su -
 
 ### Step 7: Clone our project repo
 ```
-git clone https://github.com/amitvashisttech/applicationtesting-sast-dast-aristocart-04-Jun-2024.git 
+git clone https://github.com/amitvashisttech/applicationtesting-sast-dast-aristocart-04-Jun-2024.git
 ```
 
 
