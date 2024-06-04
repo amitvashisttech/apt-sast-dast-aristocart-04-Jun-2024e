@@ -17,9 +17,21 @@ pipeline {
     
      stage('Maven CleanUP'){
         steps{ 
-           sh 'mvn clean -f  03-Easybuggy/pom.xml
+           sh 'mvn clean -f  03-Easybuggy/pom.xml'
         }
+     }
 
+
+     stage('Maven Compile'){
+        steps{ 
+           sh 'mvn compile -f  03-Easybuggy/pom.xml'
+        }
+     }
+
+     stage('Maven Package'){
+        steps{ 
+           sh 'mvn package -f  03-Easybuggy/pom.xml'
+        }
      }
 
   }
