@@ -21,7 +21,7 @@ ip addr
 
 ### Step 5: Jenkins probably ask you initial credentials. 
 ```
-cat /var/lib/jenkins/secrets/initialcredentials
+cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 
 ### Step 6: Step your login name. 
