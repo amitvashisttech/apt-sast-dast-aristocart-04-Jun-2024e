@@ -16,7 +16,7 @@ apt-get install maven -y
 Name: EasyBuggy
 SCM : Select -> Git 
 Type: FreeStyle Job 
-Repo: "https://github.com/amitvashisttech/applicationtesting-sast-dast-aristocart-04-Jun-2024.git" 
+Repo: https://github.com/amitvashisttech/applicationtesting-sast-dast-aristocart-04-Jun-2024.git 
 Branch : */main 
 Go to Build Steps -> Select Execute Shell -> Supply the Linux Command of your choice. 
 ```
