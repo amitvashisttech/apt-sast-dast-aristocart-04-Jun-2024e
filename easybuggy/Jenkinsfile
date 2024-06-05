@@ -34,6 +34,14 @@ pipeline {
         }
      }
 
+     stage('SonarQubeScan'){
+      withSonarQubeEnv('Sonar'){
+        steps{ 
+           sh 'mvn sonar:sonar -f  03-Easybuggy/pom.xml'
+        }
+      }
+     }
+
 
      stage('Archive Artifacts - JAR'){
         steps{ 
