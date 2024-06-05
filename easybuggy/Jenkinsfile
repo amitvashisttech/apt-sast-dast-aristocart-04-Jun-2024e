@@ -42,7 +42,7 @@ pipeline {
      }
 
 
-     stage('Docker Build'){
+     stage('Docker Build & Deploy Easybuggy'){
         steps{ 
            sh "cd 03-Easybuggy ; pwd; ls -ltr ; docker-compose up --build -d"
            sh "docker tag easybuggy amitvashist7/easybuggy:latest" 
