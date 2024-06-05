@@ -53,7 +53,7 @@ pipeline {
               docker kill ${containerName}
               docker rm ${containerName}
            else 
-             echo "Container ${containerName} does not exist.
+             echo "Container ${containerName} does not exist. Skipping.."
            fi
            """
         }
