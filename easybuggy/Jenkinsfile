@@ -45,7 +45,8 @@ pipeline {
      stage('Docker Build'){
         steps{ 
            sh "cd 03-Easybuggy"
-           sh "docker build -t easybuggy -f Dockerfile ."
+           sh "pwd; ls -ltr" 
+           sh "docker build -t easybuggy -f Dockerfile --tag easybuggy ."
            sh "docker tag easybuggy amitvashist7/easybuggy:latest" 
         }
      }
