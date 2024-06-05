@@ -42,14 +42,14 @@ pipeline {
      }
 
 
-     stage('Docker Build & Deploy Easybuggy'){
+     stage('Docker CleanUp Easybuggy'){
         steps{
            script { 
            def containerName = '03-easybuggy_easybuggy_1' 
 
            
            sh """
-           if docker ps -a --format '{{.Names}}' | grep -q "^${containerName}\$; then    
+           if docker ps -a --format '{{.Names}}' | grep -q "^${containerName}\$"; then    
               docker kill ${containerName}
               docker rm ${containerName}
            else 
