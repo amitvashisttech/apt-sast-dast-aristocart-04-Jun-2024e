@@ -17,4 +17,13 @@
 
   63 usermod -a -G docker jenkins 
 
-  64 systemctl restart jenkins 
+  64 systemctl restart jenkins
+
+
+# Install Docker Compose
+
+ 106 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+ 107 sudo chmod +x /usr/local/bin/docker-compose
+
+ 108 docker-compose version 
