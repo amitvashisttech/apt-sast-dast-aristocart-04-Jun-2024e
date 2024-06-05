@@ -44,7 +44,7 @@ pipeline {
 
      stage('Docker Build & Deploy Easybuggy'){
         steps{
-           sh 'docker run -d busybox' 
+           sh 'docker run -itd busybox' 
            sh 'docker kill $(docker ps -q); docker rm $(docker ps -qa)'
            sh "cd 03-Easybuggy ; pwd; ls -ltr ; docker-compose up --build -d"
         }
