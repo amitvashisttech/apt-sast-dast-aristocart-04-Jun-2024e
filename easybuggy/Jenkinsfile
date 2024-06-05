@@ -41,6 +41,16 @@ pipeline {
         }
      }
 
+
+     stage('Docker Build'){
+        steps{ 
+           sh "cd 03-Easybuddy"
+           sh "docker build -t easybuggy ."
+           sh "docker tag easybuggy amitvashist7/easybuggy:latest" 
+        }
+     }
+
+
   }
 
 }
