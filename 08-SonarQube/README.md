@@ -40,4 +40,24 @@ https://updates.jenkins.io/download/plugins/sonar/
 Version : 2.8.1 
 ```
 
-## Step 10: Install the same in jenkins by uploading it. 
+## Step 10: Upload the download Plugin & Install 
+```
+1. Click -> Manage Jenkins -> Plugin -> Advance Setting Tab -> Choose -> brower the plugin from your local machine -> Deploy.
+```
+
+## Step 10: Install the same in jenkins by uploading it & restart Jenkins.
+```
+systemctl restart jenkins 
+```
+
+
+## Step 11: We need to configure SonarQube Settings in Jenkins. 
+```
+1. Click -> Manage Jenkins -> Configure System -> System -> Search for SonarQube Server Section & Provide the required detials:
+
+Name: Sonar
+Server URL : http://172.31.0.100:9000
+Server Auth Token : <what-we-have-genrated-from-sonarqube>
+```
+
+  
