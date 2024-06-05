@@ -15,3 +15,20 @@ sysctl -w vm.max_map_count=262144
 ```
 docker-compose up -d 
 ```
+
+
+## Step 6: Check sonarqube is running or not & also check the port no. 
+```
+docker ps 
+```
+
+## Step 7: Login to SonarQube Webpage [http://masterip:9000 ] & Credentials : admin/admin 
+
+## Step 8: We need to genrate a tocker sonar & jenkins integration. 
+```
+- Click on Adminstrator Tab
+- Click on Security Sub Menu 
+- Select the Users 
+- Click on the Token Menu 
+- Create a new token & make a note of that. 
+```
