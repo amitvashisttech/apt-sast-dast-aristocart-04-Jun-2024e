@@ -35,9 +35,9 @@ pipeline {
      }
 
      stage('SonarQubeScan'){
-      withSonarQubeEnv('Sonar'){
         steps{ 
-           sh 'mvn sonar:sonar -f  03-Easybuggy/pom.xml'
+             withSonarQubeEnv('Sonar'){
+               sh 'mvn sonar:sonar -f  03-Easybuggy/pom.xml'
         }
       }
      }
