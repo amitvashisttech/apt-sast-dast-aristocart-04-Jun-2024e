@@ -32,3 +32,12 @@ docker ps
 - Click on the Token Menu 
 - Create a new token & make a note of that. 
 ```
+
+## Step 9: Now we need to downlaod SonarQube integation plugin 
+```
+https://updates.jenkins.io/download/plugins/sonar/
+
+Version : 2.8.1 
+```
+
+## Step 10: Install the same in jenkins by uploading it. 
