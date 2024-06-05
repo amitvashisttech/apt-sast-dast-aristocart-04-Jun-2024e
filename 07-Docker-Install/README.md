@@ -14,3 +14,7 @@
   61 sudo apt install docker-ce
 
   62 docker ps
+
+  63 usermod -a -G docker jenkins 
+
+  64 systemctl restart jenkins 
