@@ -1,5 +1,5 @@
-Fortify - STAT
-==============>
+## Fortify - STAT
+
 1. Google Search : Micro focus fortify on demand free trial & SignUP. 
 2. Activate the TRIAL & Launch the Fortify on Demand instnace. 
 3. Create Application
